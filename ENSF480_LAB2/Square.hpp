@@ -15,7 +15,7 @@ protected:
 	double side_a;
 
 public:
-    Square(Point origin, char* shapeName, double side_length): Shape(origin, shapeName), side_a(side_length){}
+    Square(double x, double y, double side_length, char* shapeName): Shape(*new Point(x,y), shapeName), side_a(side_length){}
     
     virtual double area();
     //REQUIRES: this has non-negative and non-garbage side_a value
