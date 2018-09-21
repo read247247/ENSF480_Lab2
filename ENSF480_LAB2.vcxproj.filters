@@ -33,10 +33,10 @@
     <ClCompile Include="ensf480_lab2\Square.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Circle.cpp">
+    <ClCompile Include="ENSF480_LAB2\Circle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CurveCut.cpp">
+    <ClCompile Include="ENSF480_LAB2\CurveCut.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,10 +56,10 @@
     <ClInclude Include="ensf480_lab2\Square.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Circle.hpp">
+    <ClInclude Include="ENSF480_LAB2\CurveCut.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CurveCut.h">
+    <ClInclude Include="ENSF480_LAB2\Circle.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
