@@ -12,7 +12,8 @@
 #include <stdio.h>
 #include "Shape.hpp"
 
-class Circle:public Shape{
+class Circle: virtual public Shape{
+protected:
     double radius;
     
     Circle(double x, double y, double rad, char* circle_name);

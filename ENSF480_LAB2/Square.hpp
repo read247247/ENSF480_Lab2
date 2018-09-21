@@ -10,7 +10,7 @@
 #define Square_hpp
 #include "Shape.hpp"
 
-class Square: public Shape {
+class Square: virtual public Shape {
 protected:
 	double side_a;
 

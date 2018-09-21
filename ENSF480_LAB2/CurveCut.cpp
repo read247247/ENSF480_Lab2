@@ -7,3 +7,9 @@
 //
 
 #include "CurveCut.hpp"
+
+CurveCut::CurveCut(double x, double y, double width, double length, double radius, char* curveShapeName)
+:Shape(Point(x, y), curveShapeName),
+Circle(x, y, radius, curveShapeName),
+Rectangle(x, y, width, length, curveShapeName)
+{}
