@@ -8,21 +8,33 @@
 
 #include "Point.hpp"
 
-#include <stdio.h>
 #include <iomanip>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 
 Point::Point(float x, float y){
+    this -> id = static_id++;
     this ->x = x;
     this ->y = y;
 }
 
-int Point::id = 1000;
+int Point::static_id = 1001;
+
+float Point::distance(Point& other){
+    double x_dist = this -> x - other.x;
+    double y_dist = this -> y - other.y;
+    return sqrt( (x_dist * x_dist) + (y_dist *  y_dist) );
+}
+
+float Point::distance(Point& p1, Point& p2){
+    return p1.distance(p2);
+}
 
 void Point::display(){
+    cout << "Point id: " << id << ":  ";
     cout << setprecision(2) << fixed;
     cout << "X-Coordinate: ";
     cout << setfill('0') << setw(9) << x;
@@ -30,4 +42,8 @@ void Point::display(){
 
     cout << "Y-Coordinate: ";
     cout << setfill('0') << setw(9) << y << "\n";
+}
+
+int Point::counter(){
+    return static_id - 1001;
 }
