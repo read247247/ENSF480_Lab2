@@ -14,6 +14,7 @@
 using namespace std;
 Point::Point(float x, float y){
     this -> id = static_id++;
+    cerr << this -> id;
     this ->x = x;
     this ->y = y;
 }
@@ -40,6 +41,7 @@ Point& Point::copy(const Point& rhs){
     this -> x = rhs.getx();
     this -> y = rhs.gety();
     this -> id = static_id++;
+    cerr << this -> id;
     return *this;
 }
 
