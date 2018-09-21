@@ -20,7 +20,7 @@ class Circle:public Shape{
     virtual double area();
     virtual double perimeter();
     double get_radius();
-    void set_radius();
+    void set_radius(double rad);
     virtual void display();
 };
 
