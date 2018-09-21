@@ -19,9 +19,9 @@ public:
     void set_side_a(double input);
     void set_side_b(double input);
     
-	double area();
-	double perimeter();
-	void display();
+	virtual double area();
+    virtual double perimeter();
+	virtual void display();
 	
 };
 

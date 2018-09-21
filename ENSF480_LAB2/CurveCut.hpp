@@ -10,5 +10,15 @@
 #define CurveCut_hpp
 
 #include <stdio.h>
+#include "Rectangle.hpp"
+#include "Circle.hpp"
+
+class CurveCut : public Rectangle, public Circle {
+    CurveCut(double x, double y, double width, double length, double radius, char* curveShapeName);
+    
+    double area();
+    double perimeter();
+    void display();
+};
 
 #endif /* CurveCut_hpp */

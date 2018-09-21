@@ -10,5 +10,18 @@
 #define Circle_hpp
 
 #include <stdio.h>
+#include "Shape.hpp"
+
+class Circle:public Shape{
+    double radius;
+    
+    Circle(double x, double y, double rad, char* circle_name);
+    
+    virtual double area();
+    virtual double perimeter();
+    double get_radius();
+    void set_radius();
+    virtual void display();
+};
 
 #endif /* Circle_hpp */

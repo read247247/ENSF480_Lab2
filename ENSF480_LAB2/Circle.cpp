@@ -7,3 +7,7 @@
 //
 
 #include "Circle.hpp"
+
+Circle::Circle(double x, double y, double rad, char* circle_name): Shape(Point(x, y), circle_name){
+    radius = rad;
+};

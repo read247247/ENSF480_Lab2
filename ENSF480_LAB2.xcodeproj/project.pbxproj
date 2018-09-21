@@ -84,14 +84,14 @@
 				842161DC215574D5003C9AE8 /* Square.cpp */,
 				842161DF215574E1003C9AE8 /* Rectangle.cpp */,
 				842161E2215574F4003C9AE8 /* GraphicsWorld.cpp */,
+				842161E52155A953003C9AE8 /* Circle.cpp */,
+				842161E82155A963003C9AE8 /* CurveCut.cpp */,
 				842161D7215574A9003C9AE8 /* Shape.hpp */,
 				842161DA215574C7003C9AE8 /* Point.hpp */,
 				842161DD215574D5003C9AE8 /* Square.hpp */,
 				842161E0215574E1003C9AE8 /* Rectangle.hpp */,
 				842161E3215574F4003C9AE8 /* GraphicsWorld.hpp */,
-				842161E52155A953003C9AE8 /* Circle.cpp */,
 				842161E62155A953003C9AE8 /* Circle.hpp */,
-				842161E82155A963003C9AE8 /* CurveCut.cpp */,
 				842161E92155A963003C9AE8 /* CurveCut.hpp */,
 			);
 			path = ENSF480_LAB2;
