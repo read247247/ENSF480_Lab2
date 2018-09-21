@@ -6,9 +6,9 @@
 //  Copyright © 2018 Nathan Godard. All rights reserved.
 //
 
-#ifndef Rectangle_hpp
-#define Rectangle_hpp
-
-#include <stdio.h>
-
-#endif /* Rectangle_hpp */
+//#ifndef Rectangle_hpp
+//#define Rectangle_hpp
+//
+//#include <stdio.h>
+//
+//#endif /* Rectangle_hpp */
