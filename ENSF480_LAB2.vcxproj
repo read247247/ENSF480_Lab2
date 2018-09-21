@@ -99,6 +99,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="CurveCut.cpp" />
     <ClCompile Include="ensf480_lab2\GraphicsWorld.cpp" />
     <ClCompile Include="ensf480_lab2\main.cpp" />
     <ClCompile Include="ensf480_lab2\Point.cpp" />
@@ -107,6 +109,8 @@
     <ClCompile Include="ensf480_lab2\Square.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Circle.hpp" />
+    <ClInclude Include="CurveCut.h" />
     <ClInclude Include="ensf480_lab2\GraphicsWorld.hpp" />
     <ClInclude Include="ensf480_lab2\Point.hpp" />
     <ClInclude Include="ensf480_lab2\Rectangle.hpp" />
