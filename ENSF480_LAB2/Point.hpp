@@ -23,8 +23,11 @@ public:
     ~Point();
     
     Point& copy(const Point& rhs);
-    void destroy();
+    //REQUIRES: rhs is a valid point with non-garbage values
+    //PROMISES: returns a copy of rhs
     
+    void destroy();
+    //PROMISES: Deletes this
     
     //GETTERS AND SETTERS: Nothing fancy, requirements and promises as expected
     double getx() const;
@@ -32,6 +35,7 @@ public:
     double getid() const;
     void setx(double x);
     void sety(double y);
+    //END GETTERS AND SETTERS
     
     void display();
     /*
