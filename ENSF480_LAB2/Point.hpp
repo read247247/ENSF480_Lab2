@@ -17,8 +17,14 @@ private:
     int id;
     
 public:
+    Point(const Point& p);
+    Point& operator=(const Point& p);
     Point(float x, float y);
-    //PROMISES: Creates a new Point with values x, y
+    ~Point();
+    
+    Point& copy(const Point& rhs);
+    void destroy();
+    
     
     //GETTERS AND SETTERS: Nothing fancy, requirements and promises as expected
     double getx() const;

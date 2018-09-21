@@ -6,19 +6,43 @@
 //  Copyright © 2018 Nathan Godard. All rights reserved.
 //
 
-#include "Point.hpp"
-
 #include <iomanip>
 #include <iostream>
 #include <cmath>
+#include "Point.hpp"
 
 using namespace std;
-
-
 Point::Point(float x, float y){
     this -> id = static_id++;
     this ->x = x;
     this ->y = y;
+}
+
+Point::Point(const Point& p){
+    
+}
+
+Point& Point::operator=(const Point& rhs){
+    if(this != &rhs){
+        destroy();
+        copy(rhs);
+    }
+    return *this;
+}
+
+Point::~Point(){
+    this -> destroy();
+}
+
+void Point::destroy(){
+    delete this;
+}
+
+Point& Point::copy(const Point& rhs){
+    this -> x = rhs.getx();
+    this -> y = rhs.gety();
+    this -> id = static_id++;
+    return *this;
 }
 
 double Point::getx() const{

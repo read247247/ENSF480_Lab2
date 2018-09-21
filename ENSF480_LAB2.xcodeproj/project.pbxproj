@@ -74,14 +74,14 @@
 			children = (
 				842161CF21557084003C9AE8 /* main.cpp */,
 				842161D6215574A9003C9AE8 /* Shape.cpp */,
-				842161D7215574A9003C9AE8 /* Shape.hpp */,
 				842161D9215574C7003C9AE8 /* Point.cpp */,
-				842161DA215574C7003C9AE8 /* Point.hpp */,
 				842161DC215574D5003C9AE8 /* Square.cpp */,
-				842161DD215574D5003C9AE8 /* Square.hpp */,
 				842161DF215574E1003C9AE8 /* Rectangle.cpp */,
-				842161E0215574E1003C9AE8 /* Rectangle.hpp */,
 				842161E2215574F4003C9AE8 /* GraphicsWorld.cpp */,
+				842161D7215574A9003C9AE8 /* Shape.hpp */,
+				842161DA215574C7003C9AE8 /* Point.hpp */,
+				842161DD215574D5003C9AE8 /* Square.hpp */,
+				842161E0215574E1003C9AE8 /* Rectangle.hpp */,
 				842161E3215574F4003C9AE8 /* GraphicsWorld.hpp */,
 			);
 			path = ENSF480_LAB2;

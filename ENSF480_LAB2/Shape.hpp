@@ -15,10 +15,10 @@ using namespace std;
 
 class Shape{
 public:
-	Shape(Point origin, char * shapeName);
+	Shape(const Point& origin, char * shapeName);
 	Shape(const Shape& source);
 	~Shape();
-	Shape& Shape::operator=(const Shape& rhs);
+    Shape& operator=(const Shape& rhs);
 	const Point& getOrigin()const;
 	const char* getName();
 	void display();
@@ -26,7 +26,7 @@ public:
 	void move(double dx, double dy);
 	static double distance(Shape& the_shape, Shape& other);
 
-private:
+protected:
 	Point origin;
 	char * shapeName;
 };

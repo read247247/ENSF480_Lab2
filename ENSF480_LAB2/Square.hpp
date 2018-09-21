@@ -8,6 +8,7 @@
 
 #ifndef Square_hpp
 #define Square_hpp
+#include "Shape.hpp"
 
 class Square: public Shape {
     double side_a;
