@@ -15,7 +15,7 @@
 class Circle: virtual public Shape{
 protected:
     double radius;
-    
+public:
     Circle(double x, double y, double rad, char* circle_name);
     
     virtual double area();

@@ -14,8 +14,9 @@
 #include "Circle.hpp"
 
 class CurveCut : public Rectangle, public Circle {
-    CurveCut(double x, double y, double width, double length, double radius, char* curveShapeName);
-    
+public:
+	CurveCut(double x, double y, double width, double length, double radius, char* curveShapeName);
+   
     double area();
     double perimeter();
     void display();

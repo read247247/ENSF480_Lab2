@@ -25,6 +25,9 @@ public:
 	double distance(Shape& other);
 	void move(double dx, double dy);
 	static double distance(Shape& the_shape, Shape& other);
+	
+	virtual double area();
+	virtual double perimeter();
 
 protected:
 	Point origin;

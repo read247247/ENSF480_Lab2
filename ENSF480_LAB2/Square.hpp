@@ -15,7 +15,7 @@ protected:
 	double side_a;
 
 public:
-    Square(double x, double y, double side_length, char* shapeName): Shape(Point(x,y), shapeName), side_a(side_length){}
+     Square(double x, double y, double side_length, char* shapeName): Shape(Point(x,y), shapeName), side_a(side_length){}
     ~Square();
     
     virtual double area();
