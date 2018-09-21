@@ -11,12 +11,15 @@
 
 class Point {
 private:
-    float x;
-    float y;
+    double x;
+    double y;
     static int static_id;
     int id;
     
 public:
+    Point(float x, float y);
+    //PROMISES: Creates a new Point with values x, y
+    
     void display();
     /*
     REQUIRES: this has non-garbage values for x, y
@@ -35,9 +38,6 @@ public:
     float distance(Point& other);
     //REQUIRES: this and other have non-garbage values for x and y
     //PROMISES: returns distance between this and other
-    
-    Point(float x, float y);
-    //PROMISES: Creates a new Point with values x, y
 };
 
 #endif /* Point_hpp */
