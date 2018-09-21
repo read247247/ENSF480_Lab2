@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "Square.hpp"
+#include <assert.h>
 
 using namespace std;
 

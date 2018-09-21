@@ -11,19 +11,21 @@
 #include "Shape.hpp"
 
 class Square: public Shape {
-    double side_a;
-    
+protected:
+	double side_a;
+
+public:
     Square(Point origin, char* shapeName, double side_length): Shape(origin, shapeName), side_a(side_length){}
     
-    double area();
+    virtual double area();
     //REQUIRES: this has non-negative and non-garbage side_a value
     //PROMISES: Returns the area of the square
     
-    double perimeter();
+    virtual double perimeter();
     //REQUIRES: this has non-negative and non-garbage side_a value
     //PROMISES: Returns the area of the square
     
-    void display();
+    virtual void display();
     //REQUIRES: All data members exist and are appropriate (side_a >= 0, etc)
     //PROMISES: Displays data via cout using the folloiwng format:
     /*Square Name:
