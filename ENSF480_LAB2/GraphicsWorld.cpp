@@ -7,3 +7,7 @@
 //
 
 #include "GraphicsWorld.hpp"
+
+class Point {
+    
+};

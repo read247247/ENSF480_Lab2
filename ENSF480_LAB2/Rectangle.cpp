@@ -7,3 +7,7 @@
 //
 
 #include "Rectangle.hpp"
+
+class Point {
+    
+};

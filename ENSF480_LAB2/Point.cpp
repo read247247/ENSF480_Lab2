@@ -7,3 +7,7 @@
 //
 
 #include "Point.hpp"
+
+class Point {
+    
+};

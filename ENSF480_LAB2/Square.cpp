@@ -7,3 +7,7 @@
 //
 
 #include "Square.hpp"
+
+class Point {
+    
+};
