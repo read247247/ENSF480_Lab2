@@ -8,15 +8,28 @@
 //
 #ifndef Shape_hpp
 #define Shape_hpp
+#include <iostream>
+using namespace std;
 
-class Point {
+#include "Point.hpp"
+
+class Shape{
 public:
-    float x;
-    float y;
-    static int id;
-    
-    void display();
-    Point(float x, float y);
+	Shape(Point origin, char * shapeName);
+	Shape(const Shape& source);
+	~Shape();
+	Shape& Shape::operator=(const Shape& rhs);
+	const Point& getOrigin()const;
+	const char* getName();
+	void display();
+	double distance(Shape& other);
+	void move(double dx, double dy);
+	static double distance(Shape& the_shape, Shape& other);
+
+private:
+	Point origin;
+	char * shapeName;
 };
+
 
 #endif /* Shape_hpp */
