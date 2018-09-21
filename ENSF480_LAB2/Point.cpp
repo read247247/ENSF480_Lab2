@@ -23,13 +23,13 @@ Point::Point(float x, float y){
 
 int Point::static_id = 1001;
 
-float Point::distance(Point& other){
+float Point::distance(const Point& other){
     double x_dist = this -> x - other.x;
     double y_dist = this -> y - other.y;
     return sqrt( (x_dist * x_dist) + (y_dist *  y_dist) );
 }
 
-float Point::distance(Point& p1, Point& p2){
+float Point::distance(const Point& p1, const Point& p2){
     return p1.distance(p2);
 }
 

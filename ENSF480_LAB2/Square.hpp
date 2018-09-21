@@ -9,6 +9,14 @@
 #ifndef Square_hpp
 #define Square_hpp
 
-#include <stdio.h>
+class Square: public Shape {
+    double side_a;
+    
+    Square(Point origin, char* shapeName, double side_length): Shape(origin, shapeName), side_a(side_length){}
+    
+    double area();
+    double perimeter();
+    void display();
+};
 
 #endif /* Square_hpp */

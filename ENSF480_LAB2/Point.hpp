@@ -31,11 +31,11 @@ public:
     int counter();
     //PROMISES: cout's number of objects of type Point created since program began
     
-    float static distance(Point& p1, Point& p2);
+    float static distance(const Point& p1, const Point& p2) const;
     //REQURES: p1 and p2 have non-gargage x and y values
     //PROMISES: Returns the distance between the two points
     
-    float distance(Point& other);
+    float distance(const Point& other) const;
     //REQUIRES: this and other have non-garbage values for x and y
     //PROMISES: returns distance between this and other
 };

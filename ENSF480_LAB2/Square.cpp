@@ -6,8 +6,24 @@
 //  Copyright © 2018 Nathan Godard. All rights reserved.
 //
 
-//#include "Square.hpp"
-//
-//class Square {
-//    
-//};
+#include <iostream>
+#include "Square.hpp"
+
+using namespace std;
+
+double Square::area(){
+    return side_a * side_a;
+}
+
+double Square::perimeter(){
+    return side_a * 4;
+}
+
+void Square::display(){
+    cout << "Square Name: ";
+    cout << this -> shapeName << "\n";
+    cout << this -> origin.display();
+    cout << "Side a: ";
+    cout << side_a << "\n";
+    
+}
