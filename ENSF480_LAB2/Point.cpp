@@ -18,9 +18,7 @@ Point::Point(float x, float y){
     this ->y = y;
 }
 
-Point::Point(const Point& p){
-    
-}
+Point::Point(const Point& p){}
 
 Point& Point::operator=(const Point& rhs){
     if(this != &rhs){

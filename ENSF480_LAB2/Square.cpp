@@ -24,7 +24,7 @@ double Square::perimeter(){
 void Square::display(){
     cout << "Square Name: ";
     cout << this -> shapeName << "\n";
-    //cout << this -> origin.display();
+    this -> origin.display();
     cout << "Side a: ";
     cout << side_a << "\n";
     cout << "Area: ";
