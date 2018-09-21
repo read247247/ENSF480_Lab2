@@ -6,8 +6,8 @@
 //  Copyright © 2018 Nathan Godard. All rights reserved.
 //
 
-#include "Rectangle.hpp"
-
-class Point {
-    
-};
+//#include "Rectangle.hpp"
+//
+//class Rectangle {
+//    
+//};

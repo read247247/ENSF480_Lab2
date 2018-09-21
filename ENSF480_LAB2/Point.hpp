@@ -9,6 +9,14 @@
 #ifndef Point_hpp
 #define Point_hpp
 
-#include <stdio.h>
+class Point {
+public:
+    float x;
+    float y;
+    static int id;
+    
+    void display();
+    Point(float x, float y);
+};
 
 #endif /* Point_hpp */

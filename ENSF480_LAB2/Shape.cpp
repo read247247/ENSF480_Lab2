@@ -5,9 +5,9 @@
 //  Created by Nathan Godard on 2018-09-21.
 //  Copyright © 2018 Nathan Godard. All rights reserved.
 //
-
-#include "Shape.hpp"
-
-class Shape{
-    
-};
+//
+//#include "Shape.hpp"
+//
+//class Shape{
+//    
+//};

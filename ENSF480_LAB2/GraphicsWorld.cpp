@@ -5,9 +5,9 @@
 //  Created by Nathan Godard on 2018-09-21.
 //  Copyright © 2018 Nathan Godard. All rights reserved.
 //
-
-#include "GraphicsWorld.hpp"
-
-class Point {
-    
-};
+//
+//#include "GraphicsWorld.hpp"
+//
+//class GraphicsWorld {
+//    
+//};

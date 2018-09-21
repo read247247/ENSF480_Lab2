@@ -7,9 +7,10 @@
 //
 
 #include <iostream>
+#include "Point.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Testing\n";
+    Point* testPoint = new Point(50, 2);
+    testPoint -> display();
     return 0;
 }

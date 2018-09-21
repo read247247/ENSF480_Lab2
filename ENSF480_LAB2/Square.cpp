@@ -6,8 +6,8 @@
 //  Copyright © 2018 Nathan Godard. All rights reserved.
 //
 
-#include "Square.hpp"
-
-class Point {
-    
-};
+//#include "Square.hpp"
+//
+//class Square {
+//    
+//};
