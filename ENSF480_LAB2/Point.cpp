@@ -21,6 +21,22 @@ Point::Point(float x, float y){
     this ->y = y;
 }
 
+double Point::getx() const{
+    return this -> x;
+}
+double Point::gety() const{
+    return this -> y;
+}
+double Point::getid() const{
+    return this -> id;
+}
+void Point::setx(double x){
+    this -> x = x;
+}
+void Point::sety(double y){
+    this -> y = y;
+}
+
 int Point::static_id = 1001;
 
 float Point::distance(const Point& other) const{
@@ -29,7 +45,7 @@ float Point::distance(const Point& other) const{
     return sqrt( (x_dist * x_dist) + (y_dist *  y_dist) );
 }
 
-float Point::distance(const Point& p1, const Point& p2) const{
+float Point::distance(const Point& p1, const Point& p2) {
     return p1.distance(p2);
 }
 
