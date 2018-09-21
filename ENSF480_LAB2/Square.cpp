@@ -12,6 +12,9 @@
 
 using namespace std;
 
+Square::~Square() {
+}
+
 double Square::area(){
     assert(side_a >=0);
     return side_a * side_a;

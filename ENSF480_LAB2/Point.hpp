@@ -19,7 +19,7 @@ private:
 public:
     Point(const Point& p);
     Point& operator=(const Point& p);
-    Point(float x, float y);
+    Point(double x, double y);
     ~Point();
     
     Point& copy(const Point& rhs);

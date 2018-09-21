@@ -14,8 +14,9 @@
 
 using namespace std;
 
-Shape::Shape(const Point& origin, char * shapeName):origin(origin) {
-	this->shapeName = shapeName;
+Shape::Shape(const Point& origin, char * s):origin(origin) {
+    shapeName = new char[strlen(s) + 1];
+	strcpy(this -> shapeName, s);
 }
 
 Shape::~Shape() {

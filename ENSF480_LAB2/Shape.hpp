@@ -17,11 +17,11 @@ class Shape{
 public:
 	Shape(const Point& origin, char * shapeName);
 	Shape(const Shape& source);
-	~Shape();
+	virtual ~Shape();
     Shape& operator=(const Shape& rhs);
 	const Point& getOrigin()const;
 	const char* getName();
-	void display();
+	virtual void display();
 	double distance(Shape& other);
 	void move(double dx, double dy);
 	static double distance(Shape& the_shape, Shape& other);

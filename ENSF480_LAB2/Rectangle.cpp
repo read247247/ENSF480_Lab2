@@ -12,6 +12,13 @@
 
 using namespace std;
 
+void Rectangle::set_side_a(double input){
+    side_a = input;
+}
+void Rectangle::set_side_b(double input){
+    side_b = input;
+}
+
 double Rectangle::area() {
 	assert(side_a >= 0);
 	assert(side_b >= 0);

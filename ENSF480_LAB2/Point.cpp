@@ -12,36 +12,32 @@
 #include "Point.hpp"
 
 using namespace std;
-Point::Point(float x, float y){
+Point::Point(double x, double y){
     this -> id = static_id++;
-    cerr << this -> id;
+    //cerr << this -> id;
     this ->x = x;
     this ->y = y;
 }
 
-Point::Point(const Point& p){}
+Point::Point(const Point& p){
+    copy(p);
+}
 
 Point& Point::operator=(const Point& rhs){
     if(this != &rhs){
-        destroy();
         copy(rhs);
     }
     return *this;
 }
 
 Point::~Point(){
-    this -> destroy();
-}
-
-void Point::destroy(){
-    delete this;
 }
 
 Point& Point::copy(const Point& rhs){
     this -> x = rhs.getx();
     this -> y = rhs.gety();
     this -> id = static_id++;
-    cerr << this -> id;
+    //cerr << this -> id;
     return *this;
 }
 
@@ -74,12 +70,11 @@ float Point::distance(const Point& p1, const Point& p2) {
 }
 
 void Point::display(){
-    cout << "Point id: " << id << ":  ";
+    //cout << "Point id: " << this -> id << ":  ";
     cout << setprecision(2) << fixed;
     cout << "X-Coordinate: ";
     cout << setfill('0') << setw(9) << x;
     cout << "\n";
-
     cout << "Y-Coordinate: ";
     cout << setfill('0') << setw(9) << y << "\n";
 }
