@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		842161D021557084003C9AE8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842161CF21557084003C9AE8 /* main.cpp */; };
+		842161D8215574A9003C9AE8 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842161D6215574A9003C9AE8 /* Shape.cpp */; };
+		842161DB215574C7003C9AE8 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842161D9215574C7003C9AE8 /* Point.cpp */; };
+		842161DE215574D5003C9AE8 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842161DC215574D5003C9AE8 /* Square.cpp */; };
+		842161E1215574E1003C9AE8 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842161DF215574E1003C9AE8 /* Rectangle.cpp */; };
+		842161E4215574F4003C9AE8 /* GraphicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842161E2215574F4003C9AE8 /* GraphicsWorld.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		842161CC21557084003C9AE8 /* ENSF480_LAB2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ENSF480_LAB2; sourceTree = BUILT_PRODUCTS_DIR; };
 		842161CF21557084003C9AE8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		842161D6215574A9003C9AE8 /* Shape.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		842161D7215574A9003C9AE8 /* Shape.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shape.hpp; sourceTree = "<group>"; };
+		842161D9215574C7003C9AE8 /* Point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		842161DA215574C7003C9AE8 /* Point.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Point.hpp; sourceTree = "<group>"; };
+		842161DC215574D5003C9AE8 /* Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
+		842161DD215574D5003C9AE8 /* Square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
+		842161DF215574E1003C9AE8 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		842161E0215574E1003C9AE8 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
+		842161E2215574F4003C9AE8 /* GraphicsWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsWorld.cpp; sourceTree = "<group>"; };
+		842161E3215574F4003C9AE8 /* GraphicsWorld.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphicsWorld.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				842161CF21557084003C9AE8 /* main.cpp */,
+				842161D6215574A9003C9AE8 /* Shape.cpp */,
+				842161D7215574A9003C9AE8 /* Shape.hpp */,
+				842161D9215574C7003C9AE8 /* Point.cpp */,
+				842161DA215574C7003C9AE8 /* Point.hpp */,
+				842161DC215574D5003C9AE8 /* Square.cpp */,
+				842161DD215574D5003C9AE8 /* Square.hpp */,
+				842161DF215574E1003C9AE8 /* Rectangle.cpp */,
+				842161E0215574E1003C9AE8 /* Rectangle.hpp */,
+				842161E2215574F4003C9AE8 /* GraphicsWorld.cpp */,
+				842161E3215574F4003C9AE8 /* GraphicsWorld.hpp */,
 			);
 			path = ENSF480_LAB2;
 			sourceTree = "<group>";
@@ -118,7 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842161DE215574D5003C9AE8 /* Square.cpp in Sources */,
+				842161DB215574C7003C9AE8 /* Point.cpp in Sources */,
 				842161D021557084003C9AE8 /* main.cpp in Sources */,
+				842161E4215574F4003C9AE8 /* GraphicsWorld.cpp in Sources */,
+				842161E1215574E1003C9AE8 /* Rectangle.cpp in Sources */,
+				842161D8215574A9003C9AE8 /* Shape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
