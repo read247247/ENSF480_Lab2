@@ -73,3 +73,10 @@ void Shape::move(double dx, double dy) {
 
 }
 
+double Shape::area() {
+	return 0;
+}
+double Shape::perimeter() {
+	return 0;
+}
+

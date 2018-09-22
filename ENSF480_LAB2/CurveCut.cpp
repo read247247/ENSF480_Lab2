@@ -31,6 +31,7 @@ double CurveCut::perimeter() {
 	return count;
 }
 void CurveCut::display() {
+	cout << endl;
     cout << "CurveCut Name:" << shapeName << "\n";
     origin.display();
     cout << "Width: " << side_a << "\n";

@@ -57,7 +57,7 @@ void GraphicsWorld::run(){
     cout << "\nIf it doesn't there is a problem with your assignment operator.\n" << endl; rec3.display();
 #endif // end of block to test Rectangle
     
-#if 1
+#if 0
     // Change 0 to 1 to test using array of pointer and polymorphism
     Shape* sh[4];
     cout << "\nTesting Shape* sh[4] array of pointers and polymorphism:" << endl;
