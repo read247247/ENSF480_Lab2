@@ -2,8 +2,7 @@
 //  Rectangle.cpp
 //  ENSF480_LAB2
 //
-//  Created by Nathan Godard on 2018-09-21.
-//  Copyright © 2018 Nathan Godard. All rights reserved.
+//  Nathan Godard and Jathniel Ong
 //
 
 #include <iostream>
@@ -12,11 +11,11 @@
 
 using namespace std;
 
-void Rectangle::set_side_a(double input){
-    side_a = input;
+void Rectangle::set_side_a(double input) {
+	side_a = input;
 }
-void Rectangle::set_side_b(double input){
-    side_b = input;
+void Rectangle::set_side_b(double input) {
+	side_b = input;
 }
 
 double Rectangle::area() {
@@ -32,10 +31,11 @@ double Rectangle::perimeter() {
 }
 
 void Rectangle::display() {
+	cout << endl;
 	cout << "Rectangle Name: " << this->shapeName << endl;
 	origin.display();
 	cout << "Side a: " << side_a << endl;
-	cout << "Side b: " << side_b <<endl;
+	cout << "Side b: " << side_b << endl;
 	cout << "Area: " << area() << endl;
 	cout << "Perimeter: " << perimeter() << endl;
 }

@@ -9,26 +9,29 @@
 #include "Circle.hpp"
 #define PIE 3.1415927
 
-Circle::Circle(double x, double y, double rad, char* circle_name): Shape(Point(x, y), circle_name){
-    radius = rad;
-}
-    
-double Circle::area(){
-    return (PIE * radius * radius);
-}
-double Circle::perimeter(){
-    return (2 * PIE * radius);
-}
-double Circle::get_radius(){
-    return radius;
+Circle::Circle(double x, double y, double rad, char* circle_name) : Shape(Point(x, y), circle_name) {
+	radius = rad;
 }
 
-void Circle::set_radius(double rad){
-    radius = rad;
+double Circle::area() {
+	return (PIE * radius * radius);
 }
 
-void Circle::display(){
-    cout << "Circle Name:" << shapeName << "\n";
-    origin.display();
-    cout << "Radius: " << radius << "\n";
+double Circle::perimeter() {
+	return (2 * PIE * radius);
+}
+
+double Circle::get_radius() {
+	return radius;
+}
+
+void Circle::set_radius(double rad) {
+	radius = rad;
+}
+
+void Circle::display() {
+	cout << endl;
+	cout << "Circle Name:" << shapeName << endl;
+	origin.display();
+	cout << "Radius: " << radius << endl;
 }

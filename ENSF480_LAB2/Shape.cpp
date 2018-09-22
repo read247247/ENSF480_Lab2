@@ -2,8 +2,7 @@
 //  Shape.cpp
 //  ENSF480_LAB2
 //
-//  Created by Nathan Godard on 2018-09-21.
-//  Copyright © 2018 Nathan Godard. All rights reserved.
+//  Nathan Godard and Jathniel Ong
 //
 
 #include <assert.h>
@@ -14,16 +13,16 @@
 
 using namespace std;
 
-Shape::Shape(const Point& origin, char * s):origin(origin) {
-    shapeName = new char[strlen(s) + 1];
-	strcpy(this -> shapeName, s);
+Shape::Shape(const Point& origin, char * s) :origin(origin) {
+	shapeName = new char[strlen(s) + 1];
+	strcpy(this->shapeName, s);
 }
 
 Shape::~Shape() {
 	delete[] shapeName;
 }
 
-Shape::Shape(const Shape& source) :origin(source.origin), shapeName(new char[strlen(source.shapeName) + 1]){
+Shape::Shape(const Shape& source) :origin(source.origin), shapeName(new char[strlen(source.shapeName) + 1]) {
 	if (shapeName == NULL) {
 		cerr << "Memory not available...";
 		exit(1);
@@ -31,7 +30,7 @@ Shape::Shape(const Shape& source) :origin(source.origin), shapeName(new char[str
 	strcpy(shapeName, source.shapeName);
 }
 
-Shape& Shape::operator=(const Shape& rhs){
+Shape& Shape::operator=(const Shape& rhs) {
 	if (this == &rhs)
 		return *this;
 	delete[] shapeName;
@@ -54,6 +53,7 @@ const char* Shape::getName() {
 }
 
 void Shape::display() {
+	cout << endl;
 	cout << "Shape Name: " << this->shapeName << endl;
 	cout << "X-coordinate: " << this->origin.getx() << endl;
 	cout << "Y-coordinate: " << this->origin.gety() << endl;
@@ -76,6 +76,7 @@ void Shape::move(double dx, double dy) {
 double Shape::area() {
 	return 0;
 }
+
 double Shape::perimeter() {
 	return 0;
 }

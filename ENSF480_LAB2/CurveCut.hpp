@@ -2,8 +2,7 @@
 //  CurveCut.hpp
 //  ENSF480_LAB2
 //
-//  Created by Nathan Godard on 2018-09-21.
-//  Copyright © 2018 Nathan Godard. All rights reserved.
+//  Nathan Godard and Jathniel Ong
 //
 
 #ifndef CurveCut_hpp
@@ -16,10 +15,10 @@
 class CurveCut : public Rectangle, public Circle {
 public:
 	CurveCut(double x, double y, double width, double length, double radius, char* curveShapeName);
-   
-    double area();
-    double perimeter();
-    void display();
+
+	double area();
+	double perimeter();
+	void display();
 };
 
 #endif /* CurveCut_hpp */

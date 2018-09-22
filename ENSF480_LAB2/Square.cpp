@@ -2,8 +2,7 @@
 //  Square.cpp
 //  ENSF480_LAB2
 //
-//  Created by Nathan Godard on 2018-09-21.
-//  Copyright © 2018 Nathan Godard. All rights reserved.
+//  Nathan Godard and Jathniel Ong
 //
 
 #include <iostream>
@@ -26,13 +25,13 @@ double Square::perimeter(){
 }
 
 void Square::display(){
-    cout << "Square Name: ";
-    cout << this -> shapeName << "\n";
+	cout << endl;
+    cout << "Square Name: " << this -> shapeName << endl;
     this -> origin.display();
     cout << "Side a: ";
-    cout << side_a << "\n";
+    cout << side_a << endl;
     cout << "Area: ";
-    cout << this -> area() << "\n";
+    cout << this -> area() << endl;
     cout << "Perimeter: ";
-    cout << this -> perimeter() << "\n";
+    cout << this -> perimeter() << endl;
 }

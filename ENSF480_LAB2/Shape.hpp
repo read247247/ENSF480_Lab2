@@ -2,10 +2,9 @@
 //  Shape.hpp
 //  ENSF480_LAB2
 //
-//  Created by Nathan Godard on 2018-09-21.
-//  Copyright © 2018 Nathan Godard. All rights reserved.
+//  Nathan Godard and Jathniel Ong
 //
-//
+
 #ifndef Shape_hpp
 #define Shape_hpp
 #include <iostream>
@@ -25,7 +24,6 @@ public:
 	double distance(Shape& other);
 	void move(double dx, double dy);
 	static double distance(Shape& the_shape, Shape& other);
-	
 	virtual double area();
 	virtual double perimeter();
 

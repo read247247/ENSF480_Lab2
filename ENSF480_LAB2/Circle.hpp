@@ -2,8 +2,7 @@
 //  Circle.hpp
 //  ENSF480_LAB2
 //
-//  Created by Nathan Godard on 2018-09-21.
-//  Copyright © 2018 Nathan Godard. All rights reserved.
+//  Nathan Godard and Jathniel Ong
 //
 
 #ifndef Circle_hpp
@@ -12,17 +11,18 @@
 #include <stdio.h>
 #include "Shape.hpp"
 
-class Circle: virtual public Shape{
+class Circle : virtual public Shape {
 protected:
-    double radius;
+	double radius;
+
 public:
-    Circle(double x, double y, double rad, char* circle_name);
-    
-    virtual double area();
-    virtual double perimeter();
-    double get_radius();
-    void set_radius(double rad);
-    virtual void display();
+	Circle(double x, double y, double rad, char* circle_name);
+
+	virtual double area();
+	virtual double perimeter();
+	double get_radius();
+	void set_radius(double rad);
+	virtual void display();
 };
 
 #endif /* Circle_hpp */
