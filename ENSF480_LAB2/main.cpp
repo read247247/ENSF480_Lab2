@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+//  September 22, 2018
 
 #include <iostream>
 #include "GraphicsWorld.hpp"

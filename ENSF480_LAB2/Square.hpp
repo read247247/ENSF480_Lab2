@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+//  September 22, 2018
 
 #ifndef Square_hpp
 #define Square_hpp

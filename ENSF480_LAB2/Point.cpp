@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+//  September 22, 2018
 
 #include <iomanip>
 #include <iostream>
@@ -72,7 +73,7 @@ float Point::distance(const Point& p1, const Point& p2) {
 	return p1.distance(p2);
 }
 
-void Point::display() {
+void Point::display() const{
 	cout << setprecision(2) << fixed;
 	cout << "X-Coordinate: ";
 	cout << setfill('0') << setw(9) << x;

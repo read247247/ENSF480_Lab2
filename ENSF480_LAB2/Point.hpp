@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+//  September 22, 2018
 
 #ifndef Point_hpp
 #define Point_hpp
@@ -36,7 +37,7 @@ public:
     void sety(double y);
     //END GETTERS AND SETTERS
     
-    void display();
+    void display() const;
     /*
     REQUIRES: this has non-garbage values for x, y
     PROMISES: cout's contents of point to cout in the following format:

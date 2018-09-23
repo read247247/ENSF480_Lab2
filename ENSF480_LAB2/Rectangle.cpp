@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+// September 22, 2018
 
 #include <iostream>
 #include "Rectangle.hpp"
@@ -11,26 +12,23 @@
 
 using namespace std;
 
-void Rectangle::set_side_a(double input) {
-	side_a = input;
-}
-void Rectangle::set_side_b(double input) {
-	side_b = input;
-}
+void Rectangle::set_side_a(double input) {side_a = input;}
 
-double Rectangle::area() {
+void Rectangle::set_side_b(double input) {side_b = input;}
+
+double Rectangle::area() const{
 	assert(side_a >= 0);
 	assert(side_b >= 0);
 	return side_a * side_b;
 }
 
-double Rectangle::perimeter() {
+double Rectangle::perimeter() const{
 	assert(side_a >= 0);
 	assert(side_b >= 0);
 	return side_a * 2 + side_b * 2;
 }
 
-void Rectangle::display() {
+void Rectangle::display() const{
 	cout << endl;
 	cout << "Rectangle Name: " << this->shapeName << endl;
 	origin.display();

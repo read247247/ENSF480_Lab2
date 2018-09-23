@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+//  September 22, 2018
 
 #include "GraphicsWorld.hpp"
 #include "Shape.hpp"
@@ -27,7 +28,7 @@ void GraphicsWorld::run() {
 #endif // end of block to test Point
 
 #if 1 // Change 0 to 1 to test Square
-	cout << "\n\nTesting Functions in class Square:" << endl;
+	cout << (char const *)"\n\nTesting Functions in class Square:" << endl;
 	Square s(5, 7, 12, "SQUARE - S");
 	s.display();
 #endif // end of block to test Square
@@ -92,6 +93,7 @@ void GraphicsWorld::run() {
 	cout << "the perimeter of " << rc.getName() << " is: " << rc.perimeter() << endl;
 	d = rc.distance(c);
 	cout << "\nThe distance between rc and c is: " << d;
+    
 	// Using array of Shape pointers:
 	Shape* sh[4];
 	sh[0] = &s;
@@ -119,7 +121,6 @@ void GraphicsWorld::run() {
 	cc2 = cc;
 	cc2.display();
 #endif
-
 }
 
 

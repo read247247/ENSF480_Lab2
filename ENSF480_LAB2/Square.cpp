@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+//  September 22, 2018
 
 #include <iostream>
 #include "Square.hpp"
@@ -11,8 +12,7 @@
 
 using namespace std;
 
-Square::~Square() {
-}
+Square::~Square() {}
 
 double Square::area(){
     assert(side_a >=0);

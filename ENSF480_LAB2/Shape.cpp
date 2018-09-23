@@ -4,6 +4,7 @@
 //
 //  Nathan Godard and Jathniel Ong
 //
+//  September 22, 2018
 
 #include <assert.h>
 #include <iostream>
@@ -18,9 +19,7 @@ Shape::Shape(const Point& origin, char * s) :origin(origin) {
 	strcpy(this->shapeName, s);
 }
 
-Shape::~Shape() {
-	delete[] shapeName;
-}
+Shape::~Shape() {delete[] shapeName;}
 
 Shape::Shape(const Shape& source) :origin(source.origin), shapeName(new char[strlen(source.shapeName) + 1]) {
 	if (shapeName == NULL) {
@@ -44,15 +43,11 @@ Shape& Shape::operator=(const Shape& rhs) {
 	return *this;
 }
 
-const Point& Shape::getOrigin()const {
-	return this->origin;
-}
+const Point& Shape::getOrigin()const {return this->origin;}
 
-const char* Shape::getName() {
-	return this->shapeName;
-}
+const char* Shape::getName() const{return this->shapeName;}
 
-void Shape::display() {
+void Shape::display() const{
 	cout << endl;
 	cout << "Shape Name: " << this->shapeName << endl;
 	cout << "X-coordinate: " << this->origin.getx() << endl;
@@ -73,11 +68,7 @@ void Shape::move(double dx, double dy) {
 
 }
 
-double Shape::area() {
-	return 0;
-}
+double Shape::area() {return 0;}
 
-double Shape::perimeter() {
-	return 0;
-}
+double Shape::perimeter() {return 0;}
 
